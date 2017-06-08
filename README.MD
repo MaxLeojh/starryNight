@@ -9,5 +9,5 @@
 * **Max Leo**, Full-Stack Engineer
 * **August**, Back-End Engineer
 * **Roderick**, Front-End Engineer
-* **iron**, Key Grip
+* **Iron**, Key Grip
 * **Conan**, Database Master
