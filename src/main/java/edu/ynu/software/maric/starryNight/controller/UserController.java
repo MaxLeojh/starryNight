@@ -1,7 +1,7 @@
 package edu.ynu.software.maric.starryNight.controller;
 
-import edu.ynu.software.maric.starryNight.entity.User;
-import edu.ynu.software.maric.starryNight.entity.Video;
+import edu.ynu.software.maric.starryNight.entity.*;
+import edu.ynu.software.maric.starryNight.service.BannerService;
 import edu.ynu.software.maric.starryNight.service.UserService;
 import edu.ynu.software.maric.starryNight.service.VideoService;
 import org.springframework.stereotype.Controller;
@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -38,5 +39,4 @@ public class UserController {
         System.out.println("Success!");
         return mav;
     }
-
 }

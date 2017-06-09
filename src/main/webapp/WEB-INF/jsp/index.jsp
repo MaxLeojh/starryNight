@@ -11,9 +11,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Starry Night</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap-edited.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/bootstrap-edited.css">
 </head>
 <body>
 <!--header/nav start-->
@@ -30,7 +30,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand logo" href="#">
-                    <img src="image/logo.png" alt="某视频网站" class="img-responsive">
+                    <img src="../images/logo.png" alt="某视频网站" class="img-responsive">
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -129,7 +129,7 @@
             <%--With forEach instead--%>
             <c:forEach items="${bannerInners}" var="in">
                 <div class="${in.classes}">
-                    <img src="${in.src}" class="img-responsive">
+                    <img src="../images/${in.src}" class="img-responsive">
                     <div class="carousel-caption">
                         no caption!
                     </div>
@@ -191,8 +191,8 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <!--some javascript of video-website-->
-<script src="js/video.js"></script>
+<script src="../js/video.js"></script>
 </body>
 </html>
