@@ -21,6 +21,19 @@
         </tr>
     </c:forEach>
 </table>
+<img src="../images/pic1.jpg">
+<p>-------------------------------------------------------------</p>
+
+<table>
+    <c:forEach items="${videos}" var="v">
+        <tr>
+            <td><img src="../images/${v.location}"></td>
+            <td>${v.name}</td>
+            <td>${v.introduction}</td>
+        </tr>
+    </c:forEach>
+</table>
+
 
 </body>
 </html>
