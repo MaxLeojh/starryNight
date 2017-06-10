@@ -16,7 +16,6 @@ import java.util.List;
  * Created by August on 2017/6/10.
  */
 @Controller
-@RequestMapping("/")
 public class IndexController {
 
     @Resource
@@ -36,15 +35,15 @@ public class IndexController {
                 Indicators indicators = new Indicators(i,"active");
                 bannerIndicators.add(indicators);
 
-                Inners inners = new Inners("active", banners.get(i).getSrc());
+                Inners inners = new Inners("item active", banners.get(i).getSrc());
                 bannerInners.add(inners);
+
                 continue;
             }
-
             Indicators indicators = new Indicators(i, "");
             bannerIndicators.add(indicators);
 
-            Inners inners = new Inners("active", banners.get(i).getSrc());
+            Inners inners = new Inners("item", banners.get(i).getSrc());
             bannerInners.add(inners);
         }
 

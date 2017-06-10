@@ -21,7 +21,7 @@
         </tr>
     </c:forEach>
 </table>
-<img src="../images/pic1.jpg">
+<img src="../image/logo.png">
 <p>-------------------------------------------------------------</p>
 
 <table>
