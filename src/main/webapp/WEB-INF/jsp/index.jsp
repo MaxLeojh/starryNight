@@ -2,18 +2,24 @@
 <%--
   Created by IntelliJ IDEA.
   User: maxleo
-  Date: 17-6-9
-  Time: 下午6:17
+  Date: 17-6-10
+  Time: 下午1:48
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Starry Night</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap-edited.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/bootstrap-edited.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!--some javascript of video-website-->
+    <script src="../js/video.js"></script>
 </head>
 <body>
 <!--header/nav start-->
@@ -30,7 +36,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand logo" href="#">
-                    <img src="image/logo.png" alt="某视频网站" class="img-responsive">
+                    <img src="../images/logo.png" alt="某视频网站" class="img-responsive">
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -129,7 +135,7 @@
             <%--With forEach instead--%>
             <c:forEach items="${bannerInners}" var="in">
                 <div class="${in.classes}">
-                    <img src="${in.src}" class="img-responsive">
+                    <img src="../images/${in.src}" class="img-responsive">
                     <div class="carousel-caption">
                         no caption!
                     </div>
@@ -166,7 +172,7 @@
                     <c:forEach items="${ht.topList}" var="httl">
                         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                             <div class="video-thumbnail">
-                                <img src="${httl.src}" class="img-responsive">
+                                <img src="../images/${httl.src}" class="img-responsive">
                                 <div class="video-reasume">
                                     <h5>${httl.name}</h5>
                                     <p>${httl.introduction}</p>
@@ -188,11 +194,5 @@
     </div>
 </footer>
 <!--footer end-->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<!--some javascript of video-website-->
-<script src="js/video.js"></script>
 </body>
 </html>
