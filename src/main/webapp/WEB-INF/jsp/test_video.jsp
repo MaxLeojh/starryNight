@@ -11,7 +11,7 @@
     <title>测试影片是否能播放</title>
 </head>
 <body>
-    <video src="../video/trival_to_where.mp4" controls="controls">
+    <video src="../video/balabala.mp4" controls="controls">
     </video>
 </body>
 </html>
