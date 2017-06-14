@@ -1,11 +1,11 @@
 package edu.ynu.software.maric.starryNight.entity;
 
 /**
- * Created by August on 2017/6/9.
+ * Created by maxleo on 17-6-10.
  */
 public class Indicators {
-    private int index;
-    private String classes;
+    public int index;
+    public String classes;
 
     public Indicators(int index, String classes) {
         this.index = index;
@@ -26,13 +26,5 @@ public class Indicators {
 
     public void setClasses(String classes) {
         this.classes = classes;
-    }
-
-    @Override
-    public String toString() {
-        return "Indicators{" +
-                "index=" + index +
-                ", classes='" + classes + '\'' +
-                '}';
     }
 }

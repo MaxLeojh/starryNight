@@ -1,58 +1,68 @@
 package edu.ynu.software.maric.starryNight.controller;
 
-import edu.ynu.software.maric.starryNight.entity.Banner;
+import edu.ynu.software.maric.starryNight.entity.IndexList;
 import edu.ynu.software.maric.starryNight.entity.Indicators;
 import edu.ynu.software.maric.starryNight.entity.Inners;
-import edu.ynu.software.maric.starryNight.service.BannerService;
+import edu.ynu.software.maric.starryNight.entity.TopList;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by August on 2017/6/10.
+ * Created by maxleo on 17-6-10.
  */
 @Controller
+@RequestMapping("/index")
 public class IndexController {
 
-    @Resource
-    private BannerService bannerService;
-
-    @RequestMapping("/index")
-    public ModelAndView index() {
-        System.out.println("in index()");
+    @RequestMapping("/show")
+    public ModelAndView showIndex() {
         ModelAndView mav = new ModelAndView();
-
-        List<Banner> banners = bannerService.findBanner();
         List<Indicators> bannerIndicators = new ArrayList<Indicators>();
+        bannerIndicators.add(new Indicators(0, "active"));
+        bannerIndicators.add(new Indicators(1, ""));
+        bannerIndicators.add(new Indicators(2, ""));
+        bannerIndicators.add(new Indicators(3, ""));
+
         List<Inners> bannerInners = new ArrayList<Inners>();
-
-        for (int i = 0; i < banners.size(); i++) {
-            if (i == 0){
-                Indicators indicators = new Indicators(i,"active");
-                bannerIndicators.add(indicators);
-
-                Inners inners = new Inners("item active", banners.get(i).getSrc());
-                bannerInners.add(inners);
-
-                continue;
-            }
-            Indicators indicators = new Indicators(i, "");
-            bannerIndicators.add(indicators);
-
-            Inners inners = new Inners("item", banners.get(i).getSrc());
-            bannerInners.add(inners);
-        }
-
+        bannerInners.add(new Inners("item active", "a.jpg"));
+        bannerInners.add(new Inners("item", "b.jpg"));
+        bannerInners.add(new Inners("item", "c.jpg"));
+        bannerInners.add(new Inners("item", "d.jpg"));
         mav.addObject("bannerIndicators", bannerIndicators);
         mav.addObject("bannerInners", bannerInners);
 
-        mav.setViewName("index");
-        System.out.println("Success!");
+        List<TopList> topList = new ArrayList<TopList>();
+        topList.add(new TopList("1.jpg", "name1", "in111111"));
+        topList.add(new TopList("2.jpg", "name2", "in222222"));
+        topList.add(new TopList("3.jpg", "name3", "in333333"));
+        topList.add(new TopList("4.jpg", "name4", "in444444"));
+        IndexList il1 = new IndexList("Movie", topList);
 
+        List<TopList> topList2 = new ArrayList<TopList>();
+        topList2.add(new TopList("5.jpg", "name5", "in555555"));
+        topList2.add(new TopList("6.jpg", "name6", "in666666"));
+        topList2.add(new TopList("7.jpg", "name7", "in777777"));
+        topList2.add(new TopList("8.jpg", "name8", "in888888"));
+        IndexList il2 = new IndexList("Video", topList2);
+
+        List<TopList> topList3 = new ArrayList<TopList>();
+        topList3.add(new TopList("9.jpg", "name9", "in99999"));
+        topList3.add(new TopList("10.jpg", "name6", "in000000"));
+        topList3.add(new TopList("11.jpg", "name7", "in111111"));
+        topList3.add(new TopList("2.jpg", "name8", "i222222"));
+        IndexList il3 = new IndexList("Video", topList3);
+
+        List<IndexList> homeType = new ArrayList<IndexList>();
+        homeType.add(il1);
+        homeType.add(il2);
+        homeType.add(il3);
+        mav.addObject("homeType", homeType);
+
+        mav.setViewName("index");
         return mav;
     }
 }

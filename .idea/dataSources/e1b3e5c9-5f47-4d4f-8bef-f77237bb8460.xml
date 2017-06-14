@@ -39,595 +39,729 @@
     <table id="31" parent="14" name="user-video_relationship"/>
     <table id="32" parent="14" name="video"/>
     <table id="33" parent="14" name="video_type"/>
-    <column id="34" parent="17" name="id">
+    <view id="34" parent="14" name="director_info">
+      <Comment>VIEW</Comment>
+    </view>
+    <view id="35" parent="14" name="video_complete">
+      <Comment>VIEW</Comment>
+    </view>
+    <view id="36" parent="14" name="video_type_view">
+      <Comment>VIEW</Comment>
+    </view>
+    <column id="37" parent="17" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="35" parent="17" name="src">
+    <column id="38" parent="17" name="src">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <key id="36" parent="17" name="PRIMARY">
+    <key id="39" parent="17" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="37" parent="18" name="username">
+    <column id="40" parent="18" name="username">
       <Position>1</Position>
       <DataType>varchar(40)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="38" parent="18" name="password">
+    <column id="41" parent="18" name="password">
       <Position>2</Position>
       <DataType>varchar(40)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="39" parent="18" name="PRIMARY">
+    <key id="42" parent="18" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>username</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="40" parent="19" name="location">
+    <column id="43" parent="19" name="location">
       <Position>1</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <column id="41" parent="19" name="name">
+    <column id="44" parent="19" name="name">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <column id="42" parent="19" name="introduction">
+    <column id="45" parent="19" name="introduction">
       <Position>3</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="43" parent="19" name="id">
+    <column id="46" parent="19" name="id">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="44" parent="19" name="PRIMARY">
+    <key id="47" parent="19" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="45" parent="20" name="Video_ID">
+    <column id="48" parent="20" name="Video_ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="46" parent="20" name="Actor_ID">
+    <column id="49" parent="20" name="Actor_ID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="47" parent="20" name="PRIMARY">
+    <key id="50" parent="20" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Video_ID
 Actor_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="48" parent="21" name="Actor_ID">
+    <column id="51" parent="21" name="Actor_ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="49" parent="21" name="Actor_Name">
+    <column id="52" parent="21" name="Actor_Name">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="50" parent="21" name="Actor_Birthday">
+    <column id="53" parent="21" name="Actor_Birthday">
       <Position>3</Position>
       <DataType>date|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="51" parent="21" name="Actor_Gender">
+    <column id="54" parent="21" name="Actor_Gender">
       <Position>4</Position>
       <DataType>tinyint(4)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="52" parent="21" name="Actor_Nation">
+    <column id="55" parent="21" name="Actor_Nation">
       <Position>5</Position>
       <DataType>varchar(15)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="53" parent="21" name="Actor_ZodiacSign">
+    <column id="56" parent="21" name="Actor_ZodiacSign">
       <Position>6</Position>
       <DataType>varchar(6)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="54" parent="21" name="Actor_Height">
+    <column id="57" parent="21" name="Actor_Height">
       <Position>7</Position>
       <DataType>float|0</DataType>
     </column>
-    <column id="55" parent="21" name="Actor_Weight">
+    <column id="58" parent="21" name="Actor_Weight">
       <Position>8</Position>
       <DataType>float|0</DataType>
     </column>
-    <column id="56" parent="21" name="Actor_EthnicGroup">
+    <column id="59" parent="21" name="Actor_EthnicGroup">
       <Position>9</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <column id="57" parent="21" name="Actor_MainAward">
+    <column id="60" parent="21" name="Actor_MainAward">
       <Position>10</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="58" parent="21" name="Actor_ForeignName">
+    <column id="61" parent="21" name="Actor_ForeignName">
       <Position>11</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="59" parent="21" name="PRIMARY">
+    <index id="62" parent="21" name="Actor_Name_idx">
+      <ColNames>Actor_Name</ColNames>
+    </index>
+    <key id="63" parent="21" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Actor_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="60" parent="22" name="Admin_ID">
+    <column id="64" parent="22" name="Admin_ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="61" parent="22" name="Admin_Password">
+    <column id="65" parent="22" name="Admin_Password">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="62" parent="22" name="Admin_Name">
+    <column id="66" parent="22" name="Admin_Name">
       <Position>3</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="63" parent="22" name="Admin_Telephone">
+    <column id="67" parent="22" name="Admin_Telephone">
       <Position>4</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="64" parent="22" name="Admin_Type">
+    <column id="68" parent="22" name="Admin_Type">
       <Position>5</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="65" parent="22" name="PRIMARY">
+    <key id="69" parent="22" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Admin_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="66" parent="23" name="Ad_ID">
+    <column id="70" parent="23" name="Ad_ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="67" parent="23" name="Admin_ID">
+    <column id="71" parent="23" name="Admin_ID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="68" parent="23" name="Ad_Info">
+    <column id="72" parent="23" name="Ad_Info">
       <Position>3</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="69" parent="23" name="Ad_Name">
+    <column id="73" parent="23" name="Ad_Name">
       <Position>4</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="70" parent="23" name="Ad_Address">
+    <column id="74" parent="23" name="Ad_Address">
       <Position>5</Position>
       <DataType>varchar(128)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="71" parent="23" name="Admin_ID_idx">
+    <index id="75" parent="23" name="Admin_ID_idx">
       <ColNames>Admin_ID</ColNames>
     </index>
-    <key id="72" parent="23" name="PRIMARY">
+    <key id="76" parent="23" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Ad_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="73" parent="23" name="Admin_ID">
+    <foreign-key id="77" parent="23" name="Admin_ID">
       <ColNames>Admin_ID</ColNames>
       <RefSchemaName>video_db</RefSchemaName>
       <RefTableName>admin</RefTableName>
       <RefColNames>Admin_ID</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="74" parent="24" name="Director_ID">
+    <column id="78" parent="24" name="Director_ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="75" parent="24" name="Director_Name">
+    <column id="79" parent="24" name="Director_Name">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="76" parent="24" name="Director_Nation">
+    <column id="80" parent="24" name="Director_Nation">
       <Position>3</Position>
       <DataType>varchar(15)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="77" parent="24" name="Director_Birthday">
+    <column id="81" parent="24" name="Director_Birthday">
       <Position>4</Position>
       <DataType>date|0</DataType>
     </column>
-    <column id="78" parent="24" name="Director_MainAward">
+    <column id="82" parent="24" name="Director_MainAward">
       <Position>5</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="79" parent="24" name="PRIMARY">
+    <index id="83" parent="24" name="Director_Name_idx">
+      <ColNames>Director_Name</ColNames>
+    </index>
+    <key id="84" parent="24" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Director_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="80" parent="25" name="FAQ_ID">
+    <column id="85" parent="25" name="FAQ_ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="81" parent="25" name="User_ID">
+    <column id="86" parent="25" name="User_ID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="82" parent="25" name="FAQ_Info">
+    <column id="87" parent="25" name="FAQ_Info">
       <Position>3</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="83" parent="25" name="faq_user_fk_idx">
+    <index id="88" parent="25" name="faq_user_fk_idx">
       <ColNames>User_ID</ColNames>
     </index>
-    <key id="84" parent="25" name="PRIMARY">
+    <key id="89" parent="25" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>FAQ_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="85" parent="25" name="faq_user_fk">
+    <foreign-key id="90" parent="25" name="faq_user_fk">
       <ColNames>User_ID</ColNames>
       <RefSchemaName>video_db</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>User_ID</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="86" parent="26" name="Leader_Id">
+    <column id="91" parent="26" name="Leader_Id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="87" parent="26" name="Leader_Password">
+    <column id="92" parent="26" name="Leader_Password">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="88" parent="26" name="Leader_Name">
+    <column id="93" parent="26" name="Leader_Name">
       <Position>3</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="89" parent="26" name="PRIMARY">
+    <key id="94" parent="26" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Leader_Id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="90" parent="27" name="Video_ID">
+    <column id="95" parent="27" name="Video_ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="91" parent="27" name="User_ID">
+    <column id="96" parent="27" name="User_ID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="92" parent="27" name="Coment_Info">
+    <column id="97" parent="27" name="Coment_Info">
       <Position>3</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="93" parent="27" name="Coment_Up">
+    <column id="98" parent="27" name="Coment_Up">
       <Position>4</Position>
       <DataType>tinyint(4)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="94" parent="27" name="User_fk_idx">
+    <index id="99" parent="27" name="User_fk_idx">
       <ColNames>User_ID</ColNames>
     </index>
-    <key id="95" parent="27" name="PRIMARY">
+    <key id="100" parent="27" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Video_ID
 User_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="96" parent="27" name="Video_fk">
+    <foreign-key id="101" parent="27" name="Video_fk">
       <ColNames>Video_ID</ColNames>
       <RefSchemaName>video_db</RefSchemaName>
       <RefTableName>video</RefTableName>
       <RefColNames>Video_ID</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="97" parent="27" name="User_fk">
+    <foreign-key id="102" parent="27" name="User_fk">
       <ColNames>User_ID</ColNames>
       <RefSchemaName>video_db</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>User_ID</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="98" parent="28" name="Video_ID">
+    <column id="103" parent="28" name="Video_ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="99" parent="28" name="Actor_ID">
+    <column id="104" parent="28" name="Actor_ID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="100" parent="28" name="IsMain">
+    <column id="105" parent="28" name="IsMain">
       <Position>3</Position>
       <DataType>tinyint(4)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="101" parent="28" name="Par_actor_fk_idx">
+    <index id="106" parent="28" name="Par_actor_fk_idx">
       <ColNames>Actor_ID</ColNames>
     </index>
-    <key id="102" parent="28" name="PRIMARY">
+    <key id="107" parent="28" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Video_ID
 Actor_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="103" parent="28" name="Par_video_fk">
+    <foreign-key id="108" parent="28" name="Par_video_fk">
       <ColNames>Video_ID</ColNames>
       <RefSchemaName>video_db</RefSchemaName>
       <RefTableName>video</RefTableName>
       <RefColNames>Video_ID</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="104" parent="28" name="Par_actor_fk">
+    <foreign-key id="109" parent="28" name="Par_actor_fk">
       <ColNames>Actor_ID</ColNames>
       <RefSchemaName>video_db</RefSchemaName>
       <RefTableName>actor</RefTableName>
       <RefColNames>Actor_ID</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="105" parent="29" name="Type_ID">
+    <column id="110" parent="29" name="Type_ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="106" parent="29" name="Admin_ID">
+    <column id="111" parent="29" name="Admin_ID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="107" parent="29" name="Type_Name">
+    <column id="112" parent="29" name="Type_Name">
       <Position>3</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="108" parent="29" name="Type_admin_fk_idx">
+    <index id="113" parent="29" name="Type_admin_fk_idx">
       <ColNames>Admin_ID</ColNames>
     </index>
-    <key id="109" parent="29" name="PRIMARY">
+    <index id="114" parent="29" name="Type_Name_idx">
+      <ColNames>Type_Name</ColNames>
+    </index>
+    <key id="115" parent="29" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Type_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="110" parent="29" name="Type_admin_fk">
+    <foreign-key id="116" parent="29" name="Type_admin_fk">
       <ColNames>Admin_ID</ColNames>
       <RefSchemaName>video_db</RefSchemaName>
       <RefTableName>admin</RefTableName>
       <RefColNames>Admin_ID</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="111" parent="30" name="User_ID">
+    <column id="117" parent="30" name="User_ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="112" parent="30" name="User_Email">
+    <column id="118" parent="30" name="User_Email">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="113" parent="30" name="User_Name">
+    <column id="119" parent="30" name="User_Name">
       <Position>3</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="114" parent="30" name="User_Gender">
+    <column id="120" parent="30" name="User_Gender">
       <Position>4</Position>
       <DataType>tinyint(4)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="115" parent="30" name="User_Telephone">
+    <column id="121" parent="30" name="User_Telephone">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="116" parent="30" name="User_QQ">
+    <column id="122" parent="30" name="User_QQ">
       <Position>6</Position>
       <DataType>varchar(12)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="117" parent="30" name="User_Password">
+    <column id="123" parent="30" name="User_Password">
       <Position>7</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="118" parent="30" name="User_Email_UNIQUE">
+    <index id="124" parent="30" name="email_User">
       <ColNames>User_Email</ColNames>
-      <Unique>1</Unique>
     </index>
-    <key id="119" parent="30" name="PRIMARY">
+    <key id="125" parent="30" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>User_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="120" parent="30" name="User_Email_UNIQUE">
-      <ColNames>User_Email</ColNames>
-      <UnderlyingIndexName>User_Email_UNIQUE</UnderlyingIndexName>
-    </key>
-    <column id="121" parent="31" name="User_Id">
+    <column id="126" parent="31" name="User_Id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="122" parent="31" name="Video_ID">
+    <column id="127" parent="31" name="Video_ID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="123" parent="31" name="Comment">
+    <column id="128" parent="31" name="Comment">
       <Position>3</Position>
       <DataType>varchar(120)|0</DataType>
     </column>
-    <column id="124" parent="31" name="Islike">
+    <column id="129" parent="31" name="Islike">
       <Position>4</Position>
       <DataType>tinyint(1)|0</DataType>
     </column>
-    <column id="125" parent="31" name="Create_Time">
+    <column id="130" parent="31" name="Create_Time">
       <Position>5</Position>
       <DataType>date|0</DataType>
     </column>
-    <key id="126" parent="31" name="PRIMARY">
+    <key id="131" parent="31" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>User_Id
 Video_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="127" parent="32" name="Video_ID">
+    <column id="132" parent="32" name="Video_ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="128" parent="32" name="Director_ID">
+    <column id="133" parent="32" name="Director_ID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="129" parent="32" name="Admin_ID">
+    <column id="134" parent="32" name="Admin_ID">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="130" parent="32" name="Video_Name">
+    <column id="135" parent="32" name="Video_Name">
       <Position>4</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="131" parent="32" name="Video_Info">
+    <column id="136" parent="32" name="Video_Info">
       <Position>5</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="132" parent="32" name="Video_Date">
+    <column id="137" parent="32" name="Video_Date">
       <Position>6</Position>
       <DataType>date|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="133" parent="32" name="Video_Time">
+    <column id="138" parent="32" name="Video_Time">
       <Position>7</Position>
       <DataType>time|0</DataType>
     </column>
-    <column id="134" parent="32" name="Video_Score">
+    <column id="139" parent="32" name="Video_Score">
       <Position>8</Position>
       <DataType>float|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="135" parent="32" name="Video_ScriptWriter">
+    <column id="140" parent="32" name="Video_ScriptWriter">
       <Position>9</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="136" parent="32" name="Video_MainAward">
-      <Position>10</Position>
+    <column id="141" parent="32" name="Video_MainAward">
+      <Position>11</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="137" parent="32" name="Video_ForeignName">
-      <Position>11</Position>
-      <DataType>varchar(40)|0</DataType>
+    <column id="142" parent="32" name="Video_ForeignName">
+      <Position>12</Position>
+      <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="138" parent="32" name="Video_Address">
-      <Position>12</Position>
+    <column id="143" parent="32" name="Video_Address">
+      <Position>13</Position>
       <DataType>varchar(128)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="139" parent="32" name="Video_Like">
-      <Position>13</Position>
-      <DataType>int(11)|0</DataType>
+    <column id="144" parent="32" name="Video_Nation">
+      <Position>10</Position>
+      <DataType>varchar(15)|0</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="140" parent="32" name="Video_Picture">
-      <Position>14</Position>
-      <DataType>varchar(120)|0</DataType>
-    </column>
-    <index id="141" parent="32" name="Video_admin_fk_idx">
+    <index id="145" parent="32" name="Video_admin_fk_idx">
       <ColNames>Admin_ID</ColNames>
     </index>
-    <index id="142" parent="32" name="Video_director_fk_idx">
+    <index id="146" parent="32" name="Video_director_fk_idx">
       <ColNames>Director_ID</ColNames>
     </index>
-    <key id="143" parent="32" name="PRIMARY">
+    <index id="147" parent="32" name="Video_Date_idx">
+      <ColNames>Video_Date</ColNames>
+    </index>
+    <index id="148" parent="32" name="Video_ForeignName_idx">
+      <ColNames>Video_ForeignName</ColNames>
+    </index>
+    <index id="149" parent="32" name="Video_name_idx">
+      <ColNames>Video_Name</ColNames>
+    </index>
+    <index id="150" parent="32" name="Video_Score_idx">
+      <ColNames>Video_Score</ColNames>
+    </index>
+    <key id="151" parent="32" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Video_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="144" parent="32" name="Video_director_fk">
+    <foreign-key id="152" parent="32" name="Video_director_fk">
       <ColNames>Director_ID</ColNames>
       <RefSchemaName>video_db</RefSchemaName>
       <RefTableName>director</RefTableName>
       <RefColNames>Director_ID</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="145" parent="32" name="Video_admin_fk">
+    <foreign-key id="153" parent="32" name="Video_admin_fk">
       <ColNames>Admin_ID</ColNames>
       <RefSchemaName>video_db</RefSchemaName>
       <RefTableName>admin</RefTableName>
       <RefColNames>Admin_ID</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="146" parent="33" name="Video_ID">
+    <column id="154" parent="33" name="Video_ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="147" parent="33" name="Type_ID">
+    <column id="155" parent="33" name="Type_ID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="148" parent="33" name="Vid_type_fk_idx">
+    <index id="156" parent="33" name="Vid_type_fk_idx">
       <ColNames>Type_ID</ColNames>
     </index>
-    <key id="149" parent="33" name="PRIMARY">
+    <key id="157" parent="33" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Video_ID
 Type_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="150" parent="33" name="Vid_video_fk">
+    <foreign-key id="158" parent="33" name="Vid_video_fk">
       <ColNames>Video_ID</ColNames>
       <RefSchemaName>video_db</RefSchemaName>
       <RefTableName>video</RefTableName>
       <RefColNames>Video_ID</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="151" parent="33" name="Vid_type_fk">
+    <foreign-key id="159" parent="33" name="Vid_type_fk">
       <ColNames>Type_ID</ColNames>
       <RefSchemaName>video_db</RefSchemaName>
       <RefTableName>type</RefTableName>
       <RefColNames>Type_ID</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
+    <column id="160" parent="34" name="Director_ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="161" parent="34" name="Director_Name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="162" parent="34" name="Director_Nation">
+      <Position>3</Position>
+      <DataType>varchar(15)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="163" parent="34" name="Director_Birthday">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="164" parent="34" name="Director_MainAward">
+      <Position>5</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="165" parent="35" name="Video_ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="166" parent="35" name="Director_ID">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="167" parent="35" name="Admin_ID">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="168" parent="35" name="Video_Name">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="169" parent="35" name="Video_Info">
+      <Position>5</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="170" parent="35" name="Video_Date">
+      <Position>6</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="171" parent="35" name="Video_Time">
+      <Position>7</Position>
+      <DataType>time|0</DataType>
+    </column>
+    <column id="172" parent="35" name="Video_Score">
+      <Position>8</Position>
+      <DataType>float|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="173" parent="35" name="Video_ScriptWriter">
+      <Position>9</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="174" parent="35" name="Video_Nation">
+      <Position>10</Position>
+      <DataType>varchar(15)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="175" parent="35" name="Video_MainAward">
+      <Position>11</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="176" parent="35" name="Video_ForeignName">
+      <Position>12</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="177" parent="35" name="Video_Address">
+      <Position>13</Position>
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="178" parent="35" name="Type_Name">
+      <Position>14</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="179" parent="35" name="Actor_Name">
+      <Position>15</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="180" parent="35" name="Director_Name">
+      <Position>16</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="181" parent="36" name="Video_ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="182" parent="36" name="Type_Name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
   </database-model>
 </dataSource>

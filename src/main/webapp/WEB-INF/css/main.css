@@ -1,83 +1,70 @@
 /*some style of the whole website*/
 /*body*/
-body {
+body{
     margin-top: 50px;
-    background: #fafafa;
+    background: #eeeeee;
 }
-
 /*logo*/
-.logo {
+.logo{
     margin-top: -15px;
 }
-
-.logo img {
+.logo img{
     max-width: 50px;
     max-height: 50px;
 }
-
 /*btn-log*/
-.btn-log {
+.btn-log{
     margin-left: 15px;
 }
-
 /*more-style*/
-.more-style {
+.more-style{
     float: right;
 }
-
-.more-style a {
+.more-style a{
     text-decoration: none;
 }
-
-.more-style a:link, .more-style a:visited {
+.more-style a:link,.more-style a:visited{
     color: #555;
 }
-
-.more-style a:hover, .more-style a:active {
+.more-style a:hover,.more-style a:active{
     color: #333;
 }
-
 /*video-thumbnail*/
-.video-thumbnail {
+.video-thumbnail{
     overflow: hidden;
     position: relative;
 }
-
-.video-thumbnail {
+.video-thumbnail{
     overflow: hidden;
 }
-
-.video-thumbnail img {
-    transition-duration: 0.5s;
-}
-
-.video-thumbnail img:hover {
-    transform: scale(1.2);
-    -moz-transform: scale(1.2); /*firefox*/
-    -webkit-transform: scale(1.2); /*safari and chrome*/
-    -o-transform: scale(1.2); /*opera*/
-    -ms-transform: scale(1.2); /*ie9*/
-}
-
-.video-reasume {
+.video-thumbnail img{
+    transition-duration:0.5s;
     width: 100%;
-    height: 0;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: rgba(9, 5, 64, 0.8);
-    font-size: 12px;
-    color: white;
 }
-
-.video-reasume h5, .video-reasume p {
+.video-thumbnail img:hover{
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);/*firefox*/
+    -webkit-transform: scale(1.2);/*safari and chrome*/
+    -o-transform: scale(1.2);/*opera*/
+    -ms-transform: scale(1.2);/*ie9*/
+}
+.video-reasume{
+    width:100%;
+    height:0;
+    overflow:hidden;
+    position:absolute;
+    left:0;
+    bottom:0;
+    background: rgba(9, 5, 64, 0.8);
+    font-size:12px;
+    color:white;
+}
+.video-reasume h5,.video-reasume p{
     padding-left: 10px;
     padding-right: 10px;
 }
-
 /*video-footer*/
-.video-footer {
+.video-footer{
     background: #ffffff;
     color: #336699;
     text-align: center;
@@ -88,11 +75,113 @@ body {
     padding-bottom: 12px;
     border-top: solid 1px #ddd;
 }
-
 /*nav-center-block*/
 .nav-center-block {
     float: none;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+/*video-play-information*/
+.video-play-information{
+    margin-top: 20px;
+}
+.video-play-information span{
+    color: #336699;
+}
+.video-play-information a{
+    text-decoration: none;
+}
+/*video-play-reasume*/
+.video-play-reasume{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.video-play-reasume a img{
+    width: 12px;
+    height: 12px;
+}
+.video-play-reasume a{
+    text-decoration: none;
+}
+.video-play-reasume a:link,.video-play-reasume a:hover,.video-play-reasume a:visited,.video-play-reasume a:active{
+    color: #777;
+}
+.comment-user-logo{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+.video-play-comment-list h3{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #336699;
+}
+.video-list-title{
+    padding: 5px;
+    padding-top: 10px;
+}
+.video-list-title img{
+    height: 30px;
+}
+.video-list-title span{
+    padding-right: 10px;
+}
+.video-list-title span a:link,.video-list-title span a:hover,.video-list-title span a:visited,.video-list-title span a:active{
+    text-decoration: none;
+    color: #777;
+    font-size: 18px;
+}
+.video-content h5{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.video-content p{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.video-content span a{
+    text-decoration: none;
+}
+.video-list-item{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.video-list-item h5{
+    max-width: 200px;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.video-list-iframe{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #ffffff;
+}
+.person-introduce{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 70px;
+    background: #ffffff;
+}
+.person-pic{
+    max-width: 300px;
+    max-height: 300px;
+}
+.person-information span{
+    color: #888888;
+    font-size: 12px;
+}
+.list{
+    margin-top: 20px;
+}
+.video-play,.video-play-comment,.video-play-comment-list{
+    background: #ffffff;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

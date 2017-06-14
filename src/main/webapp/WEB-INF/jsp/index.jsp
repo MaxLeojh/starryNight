@@ -2,19 +2,24 @@
 <%--
   Created by IntelliJ IDEA.
   User: maxleo
-  Date: 17-6-9
-  Time: 下午6:17
+  Date: 17-6-10
+  Time: 下午1:48
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Starry Night</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/bootstrap-edited.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!--some javascript of video-website-->
+    <script src="../js/video.js"></script>
 </head>
 <body>
 <!--header/nav start-->
@@ -107,7 +112,7 @@
                         <input type="text" class="form-control" placeholder="Search">
                     </div>
                     <button type="submit" class="btn btn-default">搜索</button>
-                    <button type="button" class="btn btn-primary btn-log">登录</button>
+                    <button type="button" class="btn btn-primary btn-log" data-toggle="modal" data-target="#video-logIn">登录</button>
                 </form>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -167,7 +172,7 @@
                     <c:forEach items="${ht.topList}" var="httl">
                         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                             <div class="video-thumbnail">
-                                <img src="${httl.src}" class="img-responsive">
+                                <img src="../images/${httl.src}" class="img-responsive">
                                 <div class="video-reasume">
                                     <h5>${httl.name}</h5>
                                     <p>${httl.introduction}</p>
@@ -181,6 +186,69 @@
     </c:forEach>
 </div>
 <!--video-type end-->
+<div class="modal fade" id="video-logIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">登录</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">邮箱</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">密码</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="register">
+                        <span>新用户？点击<a href="" data-toggle="modal" data-target="#video-register">注册</a> !</span>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="video-register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel-register">注册</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">邮箱</label>
+                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName">昵称</label>
+                        <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">密码</label>
+                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">确认密码</label>
+                        <input type="password" class="form-control" id="exampleConfirmPassword2" placeholder="Password">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">注册</button>
+            </div>
+        </div>
+    </div>
+</div>
 <!--footer start-->
 <footer class="video-footer">
     <div class="container">
@@ -189,11 +257,5 @@
     </div>
 </footer>
 <!--footer end-->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="../js/jquery-3.2.1.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../js/bootstrap.min.js"></script>
-<!--some javascript of video-website-->
-<script src="../js/video.js"></script>
 </body>
 </html>

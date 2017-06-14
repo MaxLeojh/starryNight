@@ -1,11 +1,11 @@
 package edu.ynu.software.maric.starryNight.entity;
 
 /**
- * Created by August on 2017/6/10.
+ * Created by maxleo on 17-6-10.
  */
 public class Inners {
-    private String classes;
-    private String src;
+    public String classes;
+    public String src;
 
     public Inners(String classes, String src) {
         this.classes = classes;
@@ -26,13 +26,5 @@ public class Inners {
 
     public void setSrc(String src) {
         this.src = src;
-    }
-
-    @Override
-    public String toString() {
-        return "Inners{" +
-                "classes='" + classes + '\'' +
-                ", src='" + src + '\'' +
-                '}';
     }
 }
